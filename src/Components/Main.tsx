@@ -1,12 +1,8 @@
 /** @format */
 'use client'
 
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { SessionProvider } from 'next-auth/react';
-import { getServerSession } from 'next-auth';
-import { authOptions } from '../pages/api/auth/[...nextauth]';
-import Login from '../Components/Login';
-import { Session } from 'next-auth';
 
 
 function Main() {
@@ -35,14 +31,12 @@ function Main() {
 	}, []);
 	
 	return (
-		<div className='p-[10vw]'>
-			
-					<div className='flex'>
-						<div className='bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem]'></div>
-						<h1 className='flex items-center text-xl'>NASA Image of the Day</h1>
-						{nasaImage && <img className='flex' src={nasaImage} alt='NASA Image' />}
+		<div className='flex items-center content-center p-[10vw] h-screen w-screen'>
+					<div className='items-center content-center'>
+						<h1 className='content-center text-xl'>NASA Image of the Day</h1>
+						{nasaImage && <img className='flex-initial content-center h-[40vw]' src={nasaImage} alt='NASA Image' />}
+						<h3 className='content-end text-xl pl-[10vw]'>There's nothing flashy about this. But NASA's API that i'll link <Link className='underline' href='http://api.nasa.gov'>Here</Link> Is what I used to build this, along with NextJs / React and Mongo Cloud.</h3>
 					</div>
-			
 		</div>
 	);
 }
