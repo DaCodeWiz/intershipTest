@@ -35,7 +35,7 @@ function Main() {
 					<div className='items-center content-center'>
 						<h1 className='content-center text-xl'>NASA Image of the Day</h1>
 						{nasaImage && <img className='flex-initial content-center h-[40vw]' src={nasaImage} alt='NASA Image' />}
-						<h3 className='content-end text-xl pl-[10vw]'>There's nothing flashy about this. But NASA's API that i'll link <Link className='underline' href='http://api.nasa.gov'>Here</Link> Is what I used to build this, along with NextJs / React and Mongo Cloud.</h3>
+						<h3 className='content-end text-xl pl-[10vw]'>There is nothing flashy about this. But NASAs API, that is linked <Link className='underline' href='http://api.nasa.gov'>Here</Link> Is what I used to build this, along with NextJs / React, Mongo Cloud, Firebase.</h3>
 					</div>
 		</div>
 	);
