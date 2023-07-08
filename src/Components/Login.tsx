@@ -9,7 +9,7 @@ function Login() {
 			<button
 				onClick={() => signIn('google')}
 				className='text-white font-bold text-3xl animate-pulse'>
-				Sign In to use the Internship Test
+				Click here to sign in and use the app!
 			</button>
 		</div>
 	);
